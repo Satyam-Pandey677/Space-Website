@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.display{
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    position: fixed;
+}
+
+.destination-bg{
+    background-image: url("assets/technology/background-technology-desktop.jpg");
+}
+
+/* <======================================================== NAVBAR =================================================================> */
+
+nav{
+    height: 90px;
+    width: 100%;
+    /* background: white; */
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar-img img{
+    margin-left: 50px;
+
+
+}
+
+.items{
+    width: 55%;
+    height: 100%;
+
+}
+
+.line{
+    position: absolute;
+    height: 1px;
+    opacity: 0.5;
+    width: 35rem;
+    background: white;
+    left:200px;
+    top: 80px;
+}
+
+
+.items ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: end;
+    gap: 70px;
+    align-items: center;
+    background: rgba( 74, 84, 96, 0.2 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    padding-right: 100px;
+
+}
+
+
+
+.items ul li{
+    cursor: pointer;
+    color: white;
+    list-style:decimal-leading-zero;
+    padding: 35px 10px 35px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: border-bottom 1s;
+    
+}
+.items ul li::marker{
+    
+    font-family: 'roboto';
+}
+.items ul li:hover{
+    border-bottom: 1px solid white;
+    transition:1s;
+}
+
+
+/* <==================================================== NAVBAR END =================================================================> */
+
+/* <======================================================== HOME =================================================================> */
+
+.main{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+
+.details{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.discription{
+    padding-left: 200px;
+    height: 80%;
+    width: 100%;
+    color: white;
+    padding-top: 100px;
+
+}
+
+.discription h1{
+    font-size: 100px;
+    font-weight: 300;
+    margin: 25px 0px 25px 0;
+}
+
+.button{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore{
+    height: 200px;
+    width: 200px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    font-size: 25px;
+}
+
+.explore:hover{
+    outline: 70px solid rgba( 205, 208, 212, 0.2 );
+
+}
+
+/* <======================================================== HOME END ================================================================> */
+
+/* <====================================================== DESTINATION ===============================================================> */
+
+.destination{
+    height: 85%;
+    width: 100%;
+    display: none;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 60px;
+    position: relative;
+}
+
+.left p{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.left span{
+    font-size: 18px;
+    font-weight: 700;
+    color: grey;
+    font-family: 'roboto';
+    padding-right: 15px;
+}
+
+.left img{
+    position: absolute;
+    height: 300px;
+    top: 150px;
+    left:250px
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+    padding: 70px;
+    padding-right:250px ;
+}
+
+
+
+.planets ul{
+    display: flex;
+    gap: 20px;
+    height: 35px;
+}
+
+.planets ul li{
+    font-size: 13px;
+    color: white;
+    list-style: none;
+    font-family: 'roboto';
+    cursor: pointer;
+}
+
+.planets ul li:hover{
+    border-bottom: 2px solid white;
+}
+
+.title{
+    margin-top: 25px;
+    font-size: 120px;
+    color: white;
+    font-weight:400 ;
+}
+
+.info{
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+    margin-top: 25px;
+    line-height: 23px;
+    font-family: 'roboto';
+}
+
+.location{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+
+
+.distance p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    font-family: 'roboto';
+}
+
+.km{
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+    font-family: 'roboto';
+}
+
+.days p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    font-family: 'roboto';
+}
+
+.day{
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+    font-family: 'roboto';
+}
+/* <=================================================== DESTINATION END ==============================================================> */
+
+.crew-details{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.crew-details ul{
+    display: flex;
+    gap: 30px;
+}
+
+.crew-details ul li{
+    list-style: none;
+    font-size: 100px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.crew-details ul li:hover{
+    opacity: 1;
+}
+
+#crew-name {
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.crew .left p{
+    text-align: left;
+    margin-left: 100px;
+}
+
+.job {
+    font-size: 25px;
+    color: white;
+    margin-top:50px ;
+}
+
+.crew .right img{
+    height: 450px;
+    margin-bottom: 150px;
+}
+
+/* technology */
+
+.technology{
+    display: flex;
+}
+
+.technology .left{
+    padding-right:0 ;
+}
+
+.technology-details{
+    display: flex;
+    gap: 25px;
+    
+}
+.technology p {
+    text-align: left;
+    font-family: 'roboto';
+}
+
+.technology-details ul {
+    gap: 100px;
+    margin-top: 30px;
+}
+.technology-details ul li:hover{
+    border: 1px solid rgba(250, 249, 249, 1);
+}
+
+.technology-details ul li{
+    font-size: 25px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 249, 249, 0.5);
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-felx{
+    margin-left: 50px;
+}
+
+.second-felx #tech-name{
+    font-size: 70px;
+}
+
+
+
